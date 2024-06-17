@@ -3,9 +3,10 @@ if not game:IsLoaded() then
 end
 local UIS = game:GetService("UserInputService")
 local input_Key = Enum.KeyCode.F4
-local Btns = {"DarkMatterCar", "DarkMatterUser", "PurpleGuyUser", "NameMatter"}
+local Btns = {"DarkMatterCar", "DarkMatterUser", "PurpleGuyUser", "NameMatter", "RainBowCar"}
 local DarkTest1 = 1
 local DarkTest2 = 1
+local RainBow1 = 1
 
 local Gui = Instance.new("ScreenGui")
 Gui.Name = "SomethingNew"
@@ -24,7 +25,7 @@ IntroText.Position = UDim2.new(0.217, 0, 0.464, 0)
 IntroText.BackgroundTransparency = 1
 IntroText.TextScaled = true
 IntroText.TextColor3 = Color3.fromRGB(255, 255, 255)
-IntroText.Text = "The Script is injected into the game, in order to avoid bugs it is advisable not to spam the execute button of your injector, {Script V1.0} (By : Nexucss)"
+IntroText.Text = "The Script is injected into the game, in order to avoid bugs it is advisable not to spam the execute button of your injector, Press F4 to open the exploit, {Script V1.0} (By : Nexucss)"
 IntroText.ZIndex = 100
 Black.ZIndex = 99
 Black.Parent = Gui
@@ -133,4 +134,45 @@ end)
 List:FindFirstChild("DarkMatterUser").MouseButton1Click:Connect(function()
 	DarkTest2 = 1
 	game.ReplicatedStorage.OverheadRS.EquiperJoin:FireServer("http://www.roblox.com/asset/?id=4987182376")
+end)
+
+List:FindFirstChild("RainBowCar").MouseButton1Click:Connect(function()
+	local R, G, B = 255, 0, 0
+	if RainBow1 == 1 then
+		RainBow1 = 2
+	elseif RainBow1 == 2 then
+		RainBow1 = 1
+	end
+	while RainBow1 == 2 do
+		for Value = 1, 255 do
+			task.wait()
+			game.ReplicatedStorage.Voiture.Car_Color:FireServer("Car_Color_Server_001", Color3.fromRGB(R, G, B))
+			G += 1
+		end
+		for Value = 1, 255 do
+			task.wait()
+			game.ReplicatedStorage.Voiture.Car_Color:FireServer("Car_Color_Server_001", Color3.fromRGB(R, G, B))
+			R -= 1
+		end
+		for Value = 1, 255 do
+			task.wait()
+			game.ReplicatedStorage.Voiture.Car_Color:FireServer("Car_Color_Server_001", Color3.fromRGB(R, G, B))
+			B += 1
+		end
+		for Value = 1, 25 do
+			task.wait()
+			game.ReplicatedStorage.Voiture.Car_Color:FireServer("Car_Color_Server_001", Color3.fromRGB(R, G, B))
+			G -= 1
+		end
+		for Value = 1, 255 do
+			task.wait()
+			game.ReplicatedStorage.Voiture.Car_Color:FireServer("Car_Color_Server_001", Color3.fromRGB(R, G, B))
+			R += 1
+		end
+		for Value = 1, 255 do
+			task.wait()
+			game.ReplicatedStorage.Voiture.Car_Color:FireServer("Car_Color_Server_001", Color3.fromRGB(R, G, B))
+			B -= 1
+		end
+	end
 end)
