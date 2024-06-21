@@ -3,7 +3,7 @@ if not game:IsLoaded() then
 end
 
 local Bip = Instance.new("Sound")
-local SomeThingNew = Instance.new("ScreenGui")
+local GoodGui = Instance.new("ScreenGui")
 local Menu = Instance.new("ImageLabel")
 local UICorner = Instance.new("UICorner")
 local List = Instance.new("ScrollingFrame")
@@ -21,47 +21,61 @@ local UICorner_5 = Instance.new("UICorner")
 local Title = Instance.new("TextLabel")
 local Back = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
+local Codes = Instance.new("Frame")
+local Reward_2 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
 local Home = Instance.new("Frame")
 local Lobby = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local Title_2 = Instance.new("TextLabel")
-local Back_2 = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
-local Unlock = Instance.new("Frame")
-local Tags = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
-local UnlockT = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local Back_2 = Instance.new("Frame")
 local UICorner_10 = Instance.new("UICorner")
+local Unlock = Instance.new("Frame")
+local Tags = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local UnlockT = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
 local Title_3 = Instance.new("TextLabel")
 local Back_3 = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
-local Banners = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
-local TextLabel_3 = Instance.new("TextLabel")
-local UnlockB = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local Cars = Instance.new("Frame")
+local Banners = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
-local UnlockC = Instance.new("TextButton")
+local UnlockB = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
+local Cars = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local UnlockC = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local Items = Instance.new("Frame")
+local UICorner_18 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local UnlockItem = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Blocked = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local Locked = Instance.new("TextLabel")
+local Lock = Instance.new("ImageLabel")
 local Btn = Instance.new("ImageButton")
 local AnnonceFrame = Instance.new("Frame")
 local Annonce = Instance.new("TextLabel")
 
-SomeThingNew.Name = "SomeThingNew"
-SomeThingNew.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-SomeThingNew.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+GoodGui.Name = "GoodGui"
+GoodGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GoodGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Bip.Name = "Bip"
 Bip.SoundId = "rbxassetid://464049227"
 Bip.Volume = 0.3
-Bip.Parent = SomeThingNew
+Bip.Parent = GoodGui
 
 Menu.Name = "Menu"
-Menu.Parent = SomeThingNew
+Menu.Parent = GoodGui
 Menu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Menu.BorderSizePixel = 0
@@ -102,7 +116,7 @@ Logo.Image = "rbxassetid://13511963939"
 Logo.ScaleType = Enum.ScaleType.Fit
 
 Pages.Name = "Pages"
-Pages.Parent = SomeThingNew
+Pages.Parent = GoodGui
 Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Pages.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Pages.BorderSizePixel = 0
@@ -195,6 +209,48 @@ Back.Size = UDim2.new(0.758165181, 0, 0.134099588, 0)
 UICorner_6.CornerRadius = UDim.new(1, 0)
 UICorner_6.Parent = Back
 
+Codes.Name = "Codes"
+Codes.Parent = Money
+Codes.BackgroundColor3 = Color3.fromRGB(226, 82, 255)
+Codes.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Codes.BorderSizePixel = 0
+Codes.Position = UDim2.new(0.0566100702, 0, 0.438697278, 0)
+Codes.Size = UDim2.new(0.848046601, 0, 0.2892721, 0)
+
+Reward_2.Name = "Reward"
+Reward_2.Parent = Codes
+Reward_2.BackgroundColor3 = Color3.fromRGB(212, 0, 255)
+Reward_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Reward_2.BorderSizePixel = 0
+Reward_2.Position = UDim2.new(0.0582117438, 0, 0.52390182, 0)
+Reward_2.Size = UDim2.new(0.883476079, 0, 0.338410497, 0)
+Reward_2.Font = Enum.Font.Unknown
+Reward_2.Text = "Enter"
+Reward_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reward_2.TextScaled = true
+Reward_2.TextSize = 14.000
+Reward_2.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_7.Parent = Reward_2
+
+UICorner_8.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_8.Parent = Codes
+
+TextLabel.Parent = Codes
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-5.360938e-08, 0, 0.0728476495, 0)
+TextLabel.Size = UDim2.new(0.99999994, 0, 0.401663095, 0)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Get All Codes"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
 Home.Name = "Home"
 Home.Parent = Pages
 Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -212,21 +268,21 @@ Lobby.BorderSizePixel = 0
 Lobby.Position = UDim2.new(0.0566100702, 0, 0.120689638, 0)
 Lobby.Size = UDim2.new(0.848046601, 0, 0.2892721, 0)
 
-UICorner_7.CornerRadius = UDim.new(0.0799999982, 0)
-UICorner_7.Parent = Lobby
+UICorner_9.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_9.Parent = Lobby
 
-TextLabel.Parent = Lobby
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(1, 0, 1, 0)
-TextLabel.Font = Enum.Font.Unknown
-TextLabel.Text = "This Script made by Nexucss"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+TextLabel_2.Parent = Lobby
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "This Script made by Nexucss"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
 
 Title_2.Name = "Title"
 Title_2.Parent = Home
@@ -251,8 +307,8 @@ Back_2.BorderSizePixel = 0
 Back_2.Position = UDim2.new(0.120917425, 0, 0.865900397, 0)
 Back_2.Size = UDim2.new(0.758165181, 0, 0.134099588, 0)
 
-UICorner_8.CornerRadius = UDim.new(1, 0)
-UICorner_8.Parent = Back_2
+UICorner_10.CornerRadius = UDim.new(1, 0)
+UICorner_10.Parent = Back_2
 
 Unlock.Name = "Unlock"
 Unlock.Parent = Pages
@@ -270,21 +326,21 @@ Tags.BorderSizePixel = 0
 Tags.Position = UDim2.new(0.0566100404, 0, 0.120689638, 0)
 Tags.Size = UDim2.new(0.848046482, 0, 0.188772783, 0)
 
-UICorner_9.CornerRadius = UDim.new(0.0799999982, 0)
-UICorner_9.Parent = Tags
+UICorner_11.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_11.Parent = Tags
 
-TextLabel_2.Parent = Tags
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Size = UDim2.new(0.99999994, 0, 0.401663095, 0)
-TextLabel_2.Font = Enum.Font.Unknown
-TextLabel_2.Text = "Unlock All Tags"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
+TextLabel_3.Parent = Tags
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0.99999994, 0, 0.401663095, 0)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "Unlock All Tags"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
 
 UnlockT.Name = "UnlockT"
 UnlockT.Parent = Tags
@@ -300,8 +356,8 @@ UnlockT.TextScaled = true
 UnlockT.TextSize = 14.000
 UnlockT.TextWrapped = true
 
-UICorner_10.CornerRadius = UDim.new(0.0799999982, 0)
-UICorner_10.Parent = UnlockT
+UICorner_12.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_12.Parent = UnlockT
 
 Title_3.Name = "Title"
 Title_3.Parent = Unlock
@@ -326,8 +382,8 @@ Back_3.BorderSizePixel = 0
 Back_3.Position = UDim2.new(0.120917425, 0, 0.865900397, 0)
 Back_3.Size = UDim2.new(0.758165181, 0, 0.134099588, 0)
 
-UICorner_11.CornerRadius = UDim.new(1, 0)
-UICorner_11.Parent = Back_3
+UICorner_13.CornerRadius = UDim.new(1, 0)
+UICorner_13.Parent = Back_3
 
 Banners.Name = "Banners"
 Banners.Parent = Unlock
@@ -337,21 +393,21 @@ Banners.BorderSizePixel = 0
 Banners.Position = UDim2.new(0.0566100404, 0, 0.328667432, 0)
 Banners.Size = UDim2.new(0.848046482, 0, 0.188772783, 0)
 
-UICorner_12.CornerRadius = UDim.new(0.0799999982, 0)
-UICorner_12.Parent = Banners
+UICorner_14.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_14.Parent = Banners
 
-TextLabel_3.Parent = Banners
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Size = UDim2.new(0.99999994, 0, 0.401663095, 0)
-TextLabel_3.Font = Enum.Font.Unknown
-TextLabel_3.Text = "Unlock All Banners"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
+TextLabel_4.Parent = Banners
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Size = UDim2.new(0.99999994, 0, 0.401663095, 0)
+TextLabel_4.Font = Enum.Font.Unknown
+TextLabel_4.Text = "Unlock All Banners"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
 
 UnlockB.Name = "UnlockB"
 UnlockB.Parent = Banners
@@ -367,8 +423,8 @@ UnlockB.TextScaled = true
 UnlockB.TextSize = 14.000
 UnlockB.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0.0799999982, 0)
-UICorner_13.Parent = UnlockB
+UICorner_15.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_15.Parent = UnlockB
 
 Cars.Name = "Cars"
 Cars.Parent = Unlock
@@ -378,21 +434,21 @@ Cars.BorderSizePixel = 0
 Cars.Position = UDim2.new(0.0544852465, 0, 0.538041055, 0)
 Cars.Size = UDim2.new(0.848046482, 0, 0.188772783, 0)
 
-UICorner_14.CornerRadius = UDim.new(0.0799999982, 0)
-UICorner_14.Parent = Cars
+UICorner_16.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_16.Parent = Cars
 
-TextLabel_4.Parent = Cars
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Size = UDim2.new(0.99999994, 0, 0.401663095, 0)
-TextLabel_4.Font = Enum.Font.Unknown
-TextLabel_4.Text = "Unlock All Cars"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
+TextLabel_5.Parent = Cars
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Size = UDim2.new(0.99999994, 0, 0.401663095, 0)
+TextLabel_5.Font = Enum.Font.Unknown
+TextLabel_5.Text = "Unlock All Cars"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
 
 UnlockC.Name = "UnlockC"
 UnlockC.Parent = Cars
@@ -408,8 +464,87 @@ UnlockC.TextScaled = true
 UnlockC.TextSize = 14.000
 UnlockC.TextWrapped = true
 
-UICorner_15.CornerRadius = UDim.new(0.0799999982, 0)
-UICorner_15.Parent = UnlockC
+UICorner_17.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_17.Parent = UnlockC
+
+Items.Name = "Items"
+Items.Parent = Unlock
+Items.BackgroundColor3 = Color3.fromRGB(226, 82, 255)
+Items.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Items.BorderSizePixel = 0
+Items.Position = UDim2.new(0.051505819, 0, 0.748768985, 0)
+Items.Size = UDim2.new(0.848046482, 0, 0.188772783, 0)
+
+UICorner_18.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_18.Parent = Items
+
+TextLabel_6.Parent = Items
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Size = UDim2.new(0.99999994, 0, 0.401663095, 0)
+TextLabel_6.Font = Enum.Font.Unknown
+TextLabel_6.Text = "Unlock All Items"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+UnlockItem.Name = "UnlockItem"
+UnlockItem.Parent = Items
+UnlockItem.BackgroundColor3 = Color3.fromRGB(212, 0, 255)
+UnlockItem.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UnlockItem.BorderSizePixel = 0
+UnlockItem.Position = UDim2.new(0.0582117438, 0, 0.52390182, 0)
+UnlockItem.Size = UDim2.new(0.883476079, 0, 0.338410497, 0)
+UnlockItem.Font = Enum.Font.Unknown
+UnlockItem.Text = "Unlock"
+UnlockItem.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnlockItem.TextScaled = true
+UnlockItem.TextSize = 14.000
+UnlockItem.TextWrapped = true
+
+UICorner_19.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_19.Parent = UnlockItem
+
+Blocked.Name = "Blocked"
+Blocked.Parent = Items
+Blocked.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Blocked.BackgroundTransparency = 0.500
+Blocked.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Blocked.BorderSizePixel = 0
+Blocked.Size = UDim2.new(1, 0, 1, 0)
+Blocked.ZIndex = 3
+
+UICorner_20.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_20.Parent = Blocked
+
+Locked.Name = "Locked"
+Locked.Parent = Blocked
+Locked.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Locked.BackgroundTransparency = 1.000
+Locked.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Locked.BorderSizePixel = 0
+Locked.Position = UDim2.new(0.0667536631, 0, 0.739337862, 0)
+Locked.Size = UDim2.new(0.852439344, 0, 0.250922173, 0)
+Locked.Font = Enum.Font.Unknown
+Locked.Text = "Can't Now We are Sorry."
+Locked.TextColor3 = Color3.fromRGB(255, 255, 255)
+Locked.TextScaled = true
+Locked.TextSize = 14.000
+Locked.TextWrapped = true
+
+Lock.Name = "Lock"
+Lock.Parent = Blocked
+Lock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lock.BackgroundTransparency = 1.000
+Lock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lock.BorderSizePixel = 0
+Lock.Position = UDim2.new(0.379441261, 0, 0.253705919, 0)
+Lock.Size = UDim2.new(0.229993835, 0, 0.485632002, 0)
+Lock.Image = "rbxassetid://4625478089"
+Lock.ScaleType = Enum.ScaleType.Fit
 
 Btn.Name = "Btn"
 Btn.Parent = script
@@ -422,7 +557,7 @@ Btn.Image = "http://www.roblox.com/asset/?id=16639247784"
 Btn.ScaleType = Enum.ScaleType.Fit
 
 AnnonceFrame.Name = "AnnonceFrame"
-AnnonceFrame.Parent = SomeThingNew
+AnnonceFrame.Parent = GoodGui
 AnnonceFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 AnnonceFrame.BackgroundTransparency = 1.000
 AnnonceFrame.Position = UDim2.new(-0.5, 0, -0.5, 0)
@@ -441,13 +576,15 @@ Annonce.TextScaled = true
 Annonce.TextWrapped = true
 
 -- Scripts:
-
+	
 local TweenService = game:GetService("TweenService")
 local UIS = game:GetService("UserInputService")
 local Key = Enum.KeyCode.F4
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local event = ReplicatedStorage:WaitForChild("Tags").TagSet
+local rs = game:GetService("ReplicatedStorage")
+local event = rs:WaitForChild("Tags").TagSet
+
 local Cooldown = false
+
 local BtnsVal = {"Home", "Money", "Unlock",}
 
 function createAnnouncement(Text, announcement, message)
@@ -484,19 +621,22 @@ end
 
 function SendNotifTitre()
 	shared:SendNotification({
-		Title = "TITRE",
-		Text = "Vous avez obtenu TOUS les Titres",
+		Title = "SUCCÈS",
+		Text = "EXPLOIT : Vous avez obtenu TOUS les Titres",
 		Duration = 15,
 	})
 end
 
-function SendNotifMoney()
+function SendNotifCodes()
 	shared:SendNotification({
-		Title = "ARGENT",
-		Text = "Vous avez obtenu " .. Pages.Money.Earn.Amount.Text .. " de VoiceCoins",
+		Title = "SUCCÈS",
+		Text = "EXPLOIT : Vous avez Entré TOUS les Codes",
 		Duration = 15,
 	})
 end
+
+Menu.Visible = false
+Pages.Visible = false
 
 createAnnouncement(Annonce, AnnonceFrame, "The Script is injected into the game,\nin order to avoid bugs it is advisable not to spam the execute button of your injector,\nPress F4 to open the exploit,\n{Script V1.4} (By : Nexucss)")
 AnnonceFrame:Destroy()
@@ -614,17 +754,22 @@ end)
 Pages:FindFirstChild("Unlock").Tags.UnlockT.MouseButton1Click:Connect(function()
 	local TagsFolder = game.Players.LocalPlayer:WaitForChild("TagsFolder")
 	for i, v in ipairs(TagsFolder:GetChildren()) do
-		event:FireServer("Tag_Set-122", v.Name, true)
+		if v:IsA("BoolValue") then
+			event:FireServer("Tag_Set-122", v.Name, true)
+		end
 	end
 	SendNotifTitre()
 end)
 
-Pages:FindFirstChild("Unlock").Tags.UnlockT.MouseButton1Click:Connect(function()
-	local TagsFolder = game.Players.LocalPlayer:WaitForChild("TagsFolder")
-	for i, v in ipairs(TagsFolder:GetChildren()) do
-		event:FireServer("Tag_Set-122", v.Name, true)
+Pages:FindFirstChild("Unlock").Banners.UnlockB.MouseButton1Click:Connect(function()
+	local OverheadFolder = game.Players.LocalPlayer:WaitForChild("OverheadFolder")
+	for i, v in ipairs(OverheadFolder:GetChildren()) do
+		if v:IsA("BoolValue") then
+			local AddReward = game:GetService("ReplicatedStorage"):WaitForChild("Tags").AddReward
+			AddReward:FireServer("REWARD-99938-2222", v.Price.Value)
+			game:GetService("ReplicatedStorage"):WaitForChild("OverheadRS").Buy:FireServer("OverheadServer_01", v.Name)
+		end
 	end
-	SendNotifTitre()
 end)
 
 Pages:FindFirstChild("Unlock").Cars.UnlockC.MouseButton1Click:Connect(function()
@@ -636,9 +781,21 @@ Pages:FindFirstChild("Unlock").Cars.UnlockC.MouseButton1Click:Connect(function()
 	end
 end)
 
+Pages:FindFirstChild("Unlock").Items.UnlockItem.MouseButton1Click:Connect(function()
+	print("Can't Now We Are Sorry.")
+end)
+
 Pages:FindFirstChild("Money").Earn.Reward.MouseButton1Click:Connect(function()
-	local rs = game:GetService("ReplicatedStorage")
 	local AddReward = rs:WaitForChild("Tags").AddReward
 	AddReward:FireServer("REWARD-99938-2222", Pages.Money.Earn.Amount.Text)
-	SendNotifMoney()
+end)
+
+Pages:FindFirstChild("Money").Codes.Reward.MouseButton1Click:Connect(function()
+	local Codes = game.Players.LocalPlayer:WaitForChild("Codes")
+	for i, v in ipairs(Codes:GetChildren()) do
+		if v:IsA("BoolValue") then
+			game.ReplicatedStorage.CodesRS.CodeChanged:FireServer(v.Name)
+		end
+	end
+	SendNotifCodes()
 end)
